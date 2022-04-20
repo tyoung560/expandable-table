@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    $(document).ready(function () {
+      //hides articles
+      $(".expandable-row").hide();
+      //article accordian
+      $(".show-details").click(function () {
+        $(this).parent().siblings(".expandable-row").slideToggle("slow");
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div class="table_container row">
+    <div class="table-header-row row">
+      <div class="col-md-3 header-cell">ID</div>
+      <div class="col-md-3 header-cell">First Name</div>
+      <div class="col-md-3 header-cell">Last Name</div>
+      <div class="col-md-3 header-cell">Details</div>
+    </div>
+    <div class="table-row row">
+      <div class="col-md-3 table-cell">1</div>
+      <div class="col-md-3 table-cell">Letitia</div>
+      <div class="col-md-3 table-cell">Martensen</div>
+      <div class="col-md-3">
+        <button class="btn btn-info show-details">
+          Show Details <i class="fa fa-angle-down" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div class="expandable-row row" style="display: none;">
+        <div class="col-md-4 details_column">
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">lmartensen0@rakuten.co.jp</p>
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">Male</p>
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">109.127.62.210</p>
+        </div>
+        <div class="col-md-4 details_column">
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">114 Crowley Junction</p>
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">Programmable grid-enabled protocol</p>
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">Voolith</p>
+        </div>
+        <div class="col-md-4 details_column">
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">Construction Expeditor</p>
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">Compactor</p>
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">Wood</p>
+        </div>
+      </div>
+    </div>
+    <div class="table-row row">
+      <div class="col-md-3 table-cell">2</div>
+      <div class="col-md-3 table-cell">Nalani</div>
+      <div class="col-md-3 table-cell">Shadrack</div>
+      <div class="col-md-3">
+        <button class="btn btn-info show-details">
+          Show Details <i class="fa fa-angle-down" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div class="expandable-row row" style="display: none;">
+        <div class="col-md-4 details_column">
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">nshadrack1@dropbox.com</p>
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">Female</p>
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">169.233.166.189</p>
+        </div>
+        <div class="col-md-4 details_column">
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">45404 John Wall Court</p>
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">Organic reciprocal infrastructure</p>
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">Linktype</p>
+        </div>
+        <div class="col-md-4 details_column">
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">Estimator</p>
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">Compactor</p>
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">Aluminum</p>
+        </div>
+      </div>
+    </div>
+    <div class="table-row row">
+      <div class="col-md-3 table-cell">3</div>
+      <div class="col-md-3 table-cell">Addy</div>
+      <div class="col-md-3 table-cell">Hancox</div>
+      <div class="col-md-3">
+        <button class="btn btn-info show-details">
+          Show Details <i class="fa fa-angle-down" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div class="expandable-row row" style="display: none;">
+        <div class="col-md-4 details_column">
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">ahancox2@linkedin.com</p>
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">Female</p>
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">53.37.221.40</p>
+        </div>
+        <div class="col-md-4 details_column">
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">8548 Tomscot Parkway</p>
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">Profit-focused well-modulated architecture</p>
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">Skyvu</p>
+        </div>
+        <div class="col-md-4 details_column">
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">Architect</p>
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">Dragline</p>
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">Granite</p>
+        </div>
+      </div>
+    </div>
+    <div class="table-row row">
+      <div class="col-md-3 table-cell">4</div>
+      <div class="col-md-3 table-cell">Miguelita</div>
+      <div class="col-md-3 table-cell">Tarbin</div>
+      <div class="col-md-3">
+        <button class="btn btn-info show-details">
+          Show Details <i class="fa fa-angle-down" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div class="expandable-row row" style="display: none;">
+        <div class="col-md-4 details_column">
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">mtarbin3@devhub.com</p>
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">Female</p>
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">63.100.155.179</p>
+        </div>
+        <div class="col-md-4 details_column">
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">72 Knutson Road</p>
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">Vision-oriented asymmetric analyzer</p>
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">Twitterbridge</p>
+        </div>
+        <div class="col-md-4 details_column">
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">Architect</p>
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">Dragline</p>
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">Plastic</p>
+        </div>
+      </div>
+    </div>
+    <div class="table-row row">
+      <div class="col-md-3 table-cell">5</div>
+      <div class="col-md-3 table-cell">Sarette</div>
+      <div class="col-md-3 table-cell">Younie</div>
+      <div class="col-md-3">
+        <button class="btn btn-info show-details">
+          Show Details <i class="fa fa-angle-down" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div class="expandable-row row" style="display: none;">
+        <div class="col-md-4 details_column">
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">syounie4@apache.org</p>
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">Male</p>
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">121.52.184.196</p>
+        </div>
+        <div class="col-md-4 details_column">
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">8 Clarendon Avenue</p>
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">Optimized zero tolerance support</p>
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">Dynabox</p>
+        </div>
+        <div class="col-md-4 details_column">
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">Construction Expeditor</p>
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">Crawler</p>
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">Steel</p>
+        </div>
+      </div>
+    </div>
+    <div class="table-row row">
+      <div class="col-md-3 table-cell">6</div>
+      <div class="col-md-3 table-cell">Link</div>
+      <div class="col-md-3 table-cell">Lorrimer</div>
+      <div class="col-md-3">
+        <button class="btn btn-info show-details">
+          Show Details <i class="fa fa-angle-down" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div class="expandable-row row" style="display: none;">
+        <div class="col-md-4 details_column">
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">llorrimer5@storify.com</p>
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">Female</p>
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">116.221.68.116</p>
+        </div>
+        <div class="col-md-4 details_column">
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">0 Dwight Way</p>
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">Face to face 24 hour application</p>
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">Oloo</p>
+        </div>
+        <div class="col-md-4 details_column">
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">Construction Foreman</p>
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">Backhoe</p>
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">Vinyl</p>
+        </div>
+      </div>
+    </div>
+    <div class="table-row row">
+      <div class="col-md-3 table-cell">7</div>
+      <div class="col-md-3 table-cell">Elset</div>
+      <div class="col-md-3 table-cell">McCerery</div>
+      <div class="col-md-3">
+        <button class="btn btn-info show-details">
+          Show Details <i class="fa fa-angle-down" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div class="expandable-row row" style="display: none;">
+        <div class="col-md-4 details_column">
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">emccerery6@npr.org</p>
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">Genderqueer</p>
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">124.45.87.231</p>
+        </div>
+        <div class="col-md-4 details_column">
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">841 Buell Trail</p>
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">Ergonomic non-volatile strategy</p>
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">Shufflebeat</p>
+        </div>
+        <div class="col-md-4 details_column">
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">Subcontractor</p>
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">Backhoe</p>
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">Granite</p>
+        </div>
+      </div>
+    </div>
+    <div class="table-row row">
+      <div class="col-md-3 table-cell">8</div>
+      <div class="col-md-3 table-cell">Rubin</div>
+      <div class="col-md-3 table-cell">Lorente</div>
+      <div class="col-md-3">
+        <button class="btn btn-info show-details">
+          Show Details <i class="fa fa-angle-down" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div class="expandable-row row" style="display: none;">
+        <div class="col-md-4 details_column">
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">rlorente7@bing.com</p>
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">Female</p>
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">185.172.94.150</p>
+        </div>
+        <div class="col-md-4 details_column">
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">6618 Grasskamp Way</p>
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">Customizable high-level instruction set</p>
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">Oyondu</p>
+        </div>
+        <div class="col-md-4 details_column">
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">Architect</p>
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">Excavator</p>
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">Aluminum</p>
+        </div>
+      </div>
+    </div>
+    <div class="table-row row">
+      <div class="col-md-3 table-cell">9</div>
+      <div class="col-md-3 table-cell">Clemens</div>
+      <div class="col-md-3 table-cell">Coldridge</div>
+      <div class="col-md-3">
+        <button class="btn btn-info show-details">
+          Show Details <i class="fa fa-angle-down" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div class="expandable-row row" style="display: none;">
+        <div class="col-md-4 details_column">
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">ccoldridge8@nsw.gov.au</p>
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">Male</p>
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">35.221.216.242</p>
+        </div>
+        <div class="col-md-4 details_column">
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">88264 Thierer Pass</p>
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">Seamless client-driven adapter</p>
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">DabZ</p>
+        </div>
+        <div class="col-md-4 details_column">
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">Electrician</p>
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">Trencher</p>
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">Granite</p>
+        </div>
+      </div>
+    </div>
+    <div class="table-row row">
+      <div class="col-md-3 table-cell">10</div>
+      <div class="col-md-3 table-cell">Dina</div>
+      <div class="col-md-3 table-cell">Fenn</div>
+      <div class="col-md-3">
+        <button class="btn btn-info show-details">
+          Show Details <i class="fa fa-angle-down" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div class="expandable-row row" style="display: none;">
+        <div class="col-md-4 details_column">
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">dfenn9@reference.com</p>
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">Male</p>
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">216.110.67.15</p>
+        </div>
+        <div class="col-md-4 details_column">
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">7321 Manley Circle</p>
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">Fully-configurable secondary forecast</p>
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">Feedfire</p>
+        </div>
+        <div class="col-md-4 details_column">
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">Construction Expeditor</p>
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">Backhoe</p>
+          <p class="field_label">Sample Field</p>
+          <p class="field_text">Rubber</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
