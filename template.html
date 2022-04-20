@@ -1,0 +1,46 @@
+<div class="table_container row">
+    <div class="table-header-row row">
+        <div class="col-md-3 header-cell">ID</div>
+        <div class="col-md-3 header-cell">First Name</div>
+        <div class="col-md-3 header-cell">Last Name</div>
+        <div class="col-md-3 header-cell">Details</div>
+    </div>
+        {{#each records}}
+        <div class="table-row row">
+            <div class="col-md-3 table-cell">{{field_36}}</div>
+            <div class="col-md-3 table-cell">{{field_37}}</div>
+            <div class="col-md-3 table-cell">{{field_38}}</div>
+            <div class="col-md-3">
+                <button class="btn btn-info show-details">
+                    Show Details <i class="fa fa-angle-down" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="expandable-row row">
+                <div class="col-md-4 details_column">
+                    <p class="field_label">Sample Field</p>
+                    <p class="field_text">{{field_39}}</p>
+                    <p class="field_label">Sample Field</p>
+                    <p class="field_text">{{field_40}}</p>
+                    <p class="field_label">Sample Field</p>
+                    <p class="field_text">{{field_41}}</p>
+                </div>
+                <div class="col-md-4 details_column">
+                    <p class="field_label">Sample Field</p>
+                    <p class="field_text">{{field_42}}</p>
+                    <p class="field_label">Sample Field</p>
+                    <p class="field_text">{{field_43}}</p>
+                    <p class="field_label">Sample Field</p>
+                    <p class="field_text">{{field_44}}</p>
+                </div>
+                <div class="col-md-4 details_column">
+                    <p class="field_label">Sample Field</p>
+                    <p class="field_text">{{field_45}}</p>
+                    <p class="field_label">Sample Field</p>
+                    <p class="field_text">{{field_46}}</p>
+                    <p class="field_label">Sample Field</p>
+                    <p class="field_text">{{field_47}}</p>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+</div>
