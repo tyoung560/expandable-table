@@ -1,0 +1,39 @@
+.table_container {
+    margin: 0 15px;
+    text-align: center;
+    background: #fff;
+}
+.table-header-row {
+    background: #fff;
+    border-bottom: 2px solid #c8c8c8;
+    padding: 15px 0;
+}
+.table-row {
+    background: #fff;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+.field_label {
+    font-size: 14px;
+    font-weight: 700;
+}
+.field_text {
+    font-size: 12px;
+}
+.expandable-row {
+    max-width: 100%;
+    height: auto;
+    margin: 50px 15px 0 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.details_column {
+    flex: 1;
+    background-color: #fafafa;
+    margin: 10px;
+    padding: 15px;
+}
+.header-cell {
+    font-weight: 700;
+}
